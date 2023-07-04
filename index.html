@@ -13,7 +13,7 @@
 
 <body>
     <!-- Header con nav donde utilicé bootstrap y modificaciones propias -->
-    <header>
+    <header class="bordeInferior">
         <nav class="navbar navbar-expand-md color_decorado">
             <div class="container">
                 <div class="col-4">
@@ -66,50 +66,140 @@
                 </h2>
             </div>
         </section>
-        <!-- Sección de presentación general en formato mobil -->
-        <!-- Sección de presentación general al alcance de la página en formato web -->
-        <section class="sectionWp">
-            <!-- Bienvenida -->
-            <article class="articleWp">
-                
-                <h3>¡Bienvenido!</h3>
-                <p>En nuestro sitio de Coaching, te ofrecemos el apoyo y las herramientas necesarias para alcanzar tu
+        <!-- Sección de presentación general en formato mobile -->
+        <section class="presentacionMb colorFondo bordeInferior">
+            <!--Bienvenida-->
+            <article class="articuloMb">
+                <div class="divArticulo">
+                    <img src="./img/fondo_bienvenida.webp" alt="" class="divArticulo__imagen">
+                    <h3 class="divArticulo__h3">
+                        ¡Bienvenido!
+                    </h3>
+                </div>
+                <p class="articuloMb__p">En nuestro sitio de Coaching, te ofrecemos el apoyo y las herramientas
+                    necesarias para alcanzar tu
                     máximo
                     potencial y lograr una vida plena y satisfactoria. Con un enfoque basado en la transformación
                     personal y
                     el desarrollo integral, nuestro equipo de coaches altamente capacitados está aquí para acompañarte
                     en tu
-                    viaje hacia el éxito y el bienestar.</p>
-                <img src="./img/imagen_temporal.png" alt="Imagen de bienvenida a DISI" width="500px">
+                    viaje hacia el éxito y el bienestar.
+                </p>
+            </article>
+            <!-- Servicio Couching -->
+            <article class="articuloMb">
+                <div class="divArticulo">
+                    <img src="./img/Servicio_Couching.jpg" alt="" class="divArticulo__imagen">
+                    <h3 class="divArticulo__h3">
+                        Servicios de Couching
+                    </h3>
+                </div>
+                <ul class="articuloMb__ul">
+                    <li>Coaching Personal: Descubre tu verdadero potencial, establece metas significativas y supera
+                        obstáculos para lograr una vida equilibrada y con propósito.</li>
+                    <li>Coaching Profesional: Impulsa tu carrera hacia nuevos niveles de éxito, adquiere habilidades
+                        de
+                        liderazgo efectivas y maximiza tu rendimiento en el ámbito laboral.</li>
+                    <li>Coaching de Relaciones: Mejora tus habilidades de comunicación, desarrolla relaciones
+                        saludables
+                        y construye conexiones significativas en tu vida personal y profesional.</li>
+                    <li>Coaching de Vida: Encuentra claridad en tus valores y prioridades, define tu visión de vida
+                        y
+                        crea un plan estratégico para vivir una vida plena y auténtica.</li>
+                </ul>
+                <a href="./pages/servicio.html" class="boton color_boton_primario articuloMb__a">Leer más</a>
+            </article>
+
+            <article class="articuloMb">
+                <div class="divArticulo">
+                    <img src="./img/nuestro_enfoque.webp" alt="" class="divArticulo__imagen">
+                    <h3 class="divArticulo__h3">
+                        Nuestro Enfoque
+                    </h3>
+                </div>
+                <p class="articuloMb__p">En nuestro enfoque de Coaching, combinamos herramientas y metodologías
+                    efectivas con una
+                    comprensión profunda de tus necesidades individuales. Nos basamos en la confianza, la empatía y
+                    el respeto para crear un espacio seguro y de apoyo donde puedas explorar tus desafíos, descubrir
+                    nuevas perspectivas y tomar acciones transformadoras.
+                </p>
+
+            </article>
+
+            <article class="articuloMb">
+                <div class="divArticulo">
+                    <img src="./img/Coaching-de-Equipos.jpg" alt="" class="divArticulo__imagen">
+                    <h3 class="divArticulo__h3">
+                        Nuestro Equipo
+                    </h3>
+                </div>
+                <p class="articuloMb__p">Contamos con un equipo de coaches altamente capacitados y certificados en
+                    diversas áreas de
+                    especialización. Nuestros coaches tienen amplia experiencia y un profundo compromiso con tu
+                    crecimiento y bienestar. Estamos aquí para ayudarte a superar obstáculos, alcanzar metas
+                    ambiciosas y vivir una vida llena de significado y satisfacción.
+                </p>
+                <a href="./pages/quienes_somos.html" class="boton color_boton_primario articuloMb__a">Conocenos</a>
+            </article>
+
+        </section>
+        <!-- Sección de Testimonios versión mobile -->
+        <!-- <section class="colorFondo">
+            <h3 class="formatoTitulo">Testimonios de Clientes</h3>
+            <article class="cardTestimonio">
+                <img src="./img/testimonios/Ana.jpg" alt="">
+                <p>"Gracias al coaching, he descubierto una nueva confianza en mí mismo. Mi coach me ha ayudado a
+                    superar mis miedos y a establecer metas claras. Ahora estoy viviendo una vida más auténtica y
+                    plena. ¡No puedo recomendarlo lo suficiente!"</p>
+                <p>- Ana</p>
+            </article>
+        </section> -->
+        <!-- Sección de presentación general al alcance de la página en formato web -->
+        <section class="presentacionWp">
+            <!-- Bienvenida -->
+            <article class="articlePresentacionWp__izquierdo">
+                <div>
+                    <h3 class=".formatoSubtitulo ">¡Bienvenido!</h3>
+                    <p>En nuestro sitio de Coaching, te ofrecemos el apoyo y las herramientas necesarias para alcanzar
+                        tu
+                        máximo
+                        potencial y lograr una vida plena y satisfactoria. Con un enfoque basado en la transformación
+                        personal y
+                        el desarrollo integral, nuestro equipo de coaches altamente capacitados está aquí para
+                        acompañarte
+                        en tu
+                        viaje hacia el éxito y el bienestar.</p>
+                </div>
+                <img src="./img/fondo_bienvenida.webp" alt="Imagen de bienvenida a DISI" width="500px">
 
             </article>
             <!-- Diferentes servicios -->
-            <article>
-                <div>
-                    <h3>Servicios de Coaching</h3>
+            <article class="articlePresentacionWp__derecho">
 
-                    <ul>
-                        <li>Coaching Personal: Descubre tu verdadero potencial, establece metas significativas y supera
-                            obstáculos para lograr una vida equilibrada y con propósito.</li>
-                        <li>Coaching Profesional: Impulsa tu carrera hacia nuevos niveles de éxito, adquiere habilidades
-                            de
-                            liderazgo efectivas y maximiza tu rendimiento en el ámbito laboral.</li>
-                        <li>Coaching de Relaciones: Mejora tus habilidades de comunicación, desarrolla relaciones
-                            saludables
-                            y construye conexiones significativas en tu vida personal y profesional.</li>
-                        <li>Coaching de Vida: Encuentra claridad en tus valores y prioridades, define tu visión de vida
-                            y
-                            crea un plan estratégico para vivir una vida plena y auténtica.</li>
-                    </ul>
-                    <a href="./pages/servicio.html">Leer más</a>
-                </div>
+                <h3>Servicios de Coaching</h3>
+
+                <ul>
+                    <li>Coaching Personal: Descubre tu verdadero potencial, establece metas significativas y supera
+                        obstáculos para lograr una vida equilibrada y con propósito.</li>
+                    <li>Coaching Profesional: Impulsa tu carrera hacia nuevos niveles de éxito, adquiere habilidades
+                        de
+                        liderazgo efectivas y maximiza tu rendimiento en el ámbito laboral.</li>
+                    <li>Coaching de Relaciones: Mejora tus habilidades de comunicación, desarrolla relaciones
+                        saludables
+                        y construye conexiones significativas en tu vida personal y profesional.</li>
+                    <li>Coaching de Vida: Encuentra claridad en tus valores y prioridades, define tu visión de vida
+                        y
+                        crea un plan estratégico para vivir una vida plena y auténtica.</li>
+                </ul>
+                <a href="./pages/servicio.html">Leer más</a>
+
                 <img src="./img/imagen_temporal.png" alt="Imagen de bienvenida a DISI" width="500px">
 
 
 
             </article>
             <!-- Enfoque de los profesionales -->
-            <article>
+            <article class="articlePresentacionWp__izquierdo">
                 <div>
                     <h3>Nuestro enfoque</h3>
                     <p>En nuestro enfoque de Coaching, combinamos herramientas y metodologías efectivas con una
@@ -117,10 +207,10 @@
                         el respeto para crear un espacio seguro y de apoyo donde puedas explorar tus desafíos, descubrir
                         nuevas perspectivas y tomar acciones transformadoras.</p>
                 </div>
-                <img src="./img/imagen_temporal.png" alt="Imagen de bienvenida a DISI" width="500px">
+                <img src="./img/fondo_bienvenida.webp" alt="Imagen de bienvenida a DISI" width="500px">
             </article>
             <!-- Brever descripción del equipo y botón para ir a otra pestaña -->
-            <article>
+            <article class="articlePresentacionWp__derecho">
                 <div>
                     <h3>Nuestro equipo</h3>
                     <p>Contamos con un equipo de coaches altamente capacitados y certificados en diversas áreas de
@@ -185,7 +275,7 @@
             <a href="./pages/contactanos.html">¡Click aquí!</a>
         </section>
     </main>
-    
+
     <footer>
         <div class="footer">
             <!--section perteneciente a las redes sociales-->
