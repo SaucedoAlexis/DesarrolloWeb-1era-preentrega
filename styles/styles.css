@@ -1,14 +1,218 @@
-*{
-   margin: 0;
-   padding: 0; 
+* {
+    margin: 0;
+    padding: 0;
 }
 
-ul,ol{
+ul,
+ol {
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
     color: black;
 }
-/* Header */
+
+:root{
+    --color-primario: #1d3557;
+    --color-secundario: #e63946;
+    --boton-primario: #457b9d;
+    --boton-secundario: #a8dadc;
+    --decorado:#f1faee;
+
+}
+
+
+/* --------------------Header/nav-------------------------- */
+header{
+    border-bottom: var(--boton-secundario) solid 4px;
+}
+.navbar-brand img {
+    min-width:60px;
+    width: 28%;
+
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+
+}
+.navbar-brand h1{
+    font-size: 3rem;
+}
+.navbar-brand h1::first-letter{
+    color: var(--color-primario);
+    
+}
+
+.navbar-brand__span{
+    color: var(--color-secundario);
+    
+}
+/* --------------------Colores a botonos, fondos, activos, etc------------------ */
+.color_boton_primario{
+    background-color: var(--boton-primario);
+    
+}
+
+.color_boton_secundario{
+    background-color: var(--boton-secundario);
+    color: var(--decorado);
+}
+
+.color_decorado{
+    background-color: var(--decorado);
+}
+
+.active{
+    background-color: var(--boton-primario);
+    width: inherit;
+    text-align: center;
+    
+    
+}
+
+.active a{
+    padding: 0.5rem;
+    font-weight: 600;
+    color: var(--decorado);
+}
+
+/* -----------------Footer----------------------- */
+
+footer{
+    background-color: var(--color-primario);
+    width: 100%;
+    border-top: var(--boton-secundario) 4px solid;
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--color-primario);
+    color: var(--decorado);
+    
+    padding-top: 1rem ;
+    width: 100%;
+    max-width: 800px;
+    
+
+}
+
+.footer .footerRedes{
+    display: flex;
+    gap: 1rem;
+    padding-bottom: 1rem;
+}
+
+.footer .footerTexto{
+    font-weight: 600;
+    padding: 0 0.5rem;
+}
+
+@media (min-width: 768px) {
+    .footer{
+        flex-direction: row;
+        text-align: start;
+        padding: 0 1rem;
+        justify-content: space-between;
+        
+    }
+
+    .footer .footerTexto{
+        width: 300px;
+    }
+
+}
+
+/* ----------------Titulo principal------------------ */
+.seccionTitulo{
+    width: 100%;
+    background-color: var(--decorado);
+    
+}
+
+
+.tituloPrincipal__h2{
+    display: grid;
+    margin: 0;
+    grid-template-rows: repeat(4,1fr);
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: 500;
+    
+}
+
+.tituloPrincipal__h2 .tituloPrincipal__primero{
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: end;
+    
+}
+.tituloPrincipal__h2 .tituloPrincipal__primero::first-letter{
+    color: var(--color-primario);
+}
+
+.tituloPrincipal__h2 .tituloPrincipal__segundo{
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.tituloPrincipal__h2 .tituloPrincipal__tercero{
+    grid-column: 1;
+    grid-row: 3;
+    justify-self: end;
+}
+.tituloPrincipal__h2 .tituloPrincipal__tercero::first-letter{
+    color: var(--color-secundario);
+}
+
+.tituloPrincipal__h2 .tituloPrincipal__cuarto{
+    grid-column: 2;
+    grid-row: 4;
+}
+
+
+@media (min-width: 480px){
+    .tituloPrincipal__h2{
+        font-size: 3.5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .tituloPrincipal__h2{
+        font-size: 5rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .tituloPrincipal__h2{
+        font-size: 7rem;
+    }
+}
+
+/* -----------Presentaciones generales del index---------------*/
+.sectionWp{
+    display: none;
+}
+
+/* -----------Testimonios index----------------- */
+
+.testimoniosWp{
+    display: none;
+}
+
+/*-----------Contactanos index--------------*/
+
+.contactanosWp{
+    display:none;
+}
+
+
