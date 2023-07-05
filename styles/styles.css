@@ -116,7 +116,7 @@ a {
     color: var(--decorado);
 }
 
-.pad1rem{
+.pad1rem {
     padding: 1rem;
 }
 
@@ -292,7 +292,9 @@ footer {
 
 /* -----------Testimonios index----------------- */
 
-.testimonio{
+
+
+.testimonio__div {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -301,30 +303,41 @@ footer {
 
 }
 
-.testimonioCard{
+.testimonioCard {
     display: flex;
     flex-direction: column;
     width: 80%;
+    max-width: 400px;
+    height: 100%;
+    align-items: space-evenly;
+    justify-content: space-between;
+    border: black 1px solid;
     
-    align-items: center;
-    justify-content: center;
-    border: black 2px solid
-
 }
 
-.testimonioCard__img{
+.testimonioCard__img {
     width: 100%;
-    max-height: 275px;
-    object-fit: cover;
+    max-height: 500px;
+    object-fit:cover;
+    object-position: top;
     
+
 }
 
-.testimonioCard__nombre{
+.testimonioCard__nombre {
     align-self: end;
     padding-right: 1rem;
+    margin: 0;
 }
-.testimoniosWp{
+.testimonioCard__testimonio{
+    margin:0
+    
+}
+.testimoniosWp {
     display: none;
+}
+.testimonioCard__testimonio, .testimonioCard__nombre{
+    padding: 0.3rem;
 }
 
 /*-----------Contactanos index--------------*/
@@ -396,8 +409,9 @@ footer {
         padding: 1.5rem 1.5rem 0 1.5rem;
         background-color: var(--color-secundario);
         margin: 1rem 0;
-        
+
     }
+
     .articlePresentacionWp__derecho img {
         grid-column: 2;
         grid-row: 1;
@@ -407,6 +421,17 @@ footer {
         padding: 1rem;
     }
 
+    .testimonio__div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        padding: 1rem;
+        
+        
+    }
+
+    
+    
 
 }
 
@@ -424,7 +449,26 @@ footer {
         box-shadow: 10px 10px 10px rgba(0, 0, 0, 1);
     }
 
-    .articlePresentacionWp__izquierdo{
+    .articlePresentacionWp__izquierdo {
         box-shadow: -10px 10px 10px rgba(0, 0, 0, 1);
+    }
+
+    .tituloh3{
+        font-size: 5rem;
+    }
+
+    .testimonio__div{
+        display: flex;
+        flex-direction: row;
+        height: 700px;
+        max-height: 750px;
+        max-width: 1200px;
+        
+    }
+    .testimonio{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 }
