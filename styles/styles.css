@@ -19,17 +19,16 @@ a {
     --boton-primario: #457b9d;
     --boton-secundario: #a8dadc;
     --decorado: #f1faee;
-
+    --titulos: Tangerine;
+    --textos:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
 }
-
 
 /* --------------------Header/nav-------------------------- */
 
 .navbar-brand img {
     min-width: 60px;
     width: 28%;
-
-}
+    }
 
 .navbar-brand {
     display: flex;
@@ -51,6 +50,10 @@ a {
 
 }
 
+.nav-item{
+    font-size: 1rem;
+}
+
 /* --------------------Colores a botonos, fondos, activos, etc------------------ */
 .formatoTitulo {
     font-size: 10vw;
@@ -58,6 +61,14 @@ a {
     text-align: center;
     margin: 0;
 
+}
+
+h1,h2,h3,h4,h5{
+    font-family: var(--titulos);
+}
+
+p,a,li{
+    font-family: var(--textos);
 }
 
 .formatoSubtitulo {
@@ -72,8 +83,9 @@ a {
 
 
 .bordeInferior {
-    border-bottom: var(--boton-secundario) solid 4px;
+    border-bottom: var(--boton-secundario) solid 8px;
 }
+
 
 .color_boton_primario {
     background-color: var(--boton-primario);
@@ -85,13 +97,14 @@ a {
 .boton {
     padding: 0.5rem;
     border-radius: 10px;
-
+    border: 2px black solid;
 }
 
 
 .color_boton_secundario {
     background-color: var(--boton-secundario);
     color: var(--decorado);
+    
 }
 
 .color_decorado {
@@ -312,6 +325,9 @@ footer {
     align-items: space-evenly;
     justify-content: space-between;
     border: black 1px solid;
+    background-color: var(--boton-secundario);
+    color: var(--boton-primario);
+    font-weight: 700;
     
 }
 
@@ -342,8 +358,18 @@ footer {
 
 /*-----------Contactanos index--------------*/
 
-.contactanosWp {
-    display: none;
+.contactanos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactanos__div{
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    max-width: 900px;
+    font-size: 1.5rem;
 }
 
 /* -----------------Query------------------ */
@@ -360,8 +386,18 @@ footer {
 
     }
 
-    .footer .footerTexto {
-        width: 300px;
+    .footerTexto {
+        width: 400px;
+    }
+
+    
+
+    .footerRedes li img{
+        align-self: center;
+        justify-self: center;
+        width: 40px;
+        height: 40px;
+        
     }
 
     /* Presentación Query WP */
@@ -378,10 +414,29 @@ footer {
 
     }
 
-    .presentacionWp article {
-        max-width: 1200px;
+    
 
+    .presentacionWp div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: start;
     }
+
+    .presentacionWp h3{
+        font-size: 3rem;
+        
+    }
+
+    .presentacionWp p{
+        font-size: 1rem;
+    }
+
+    .presentacionWp div ul li{
+        font-size: 1rem;
+    }
+
+
 
     .articlePresentacionWp__izquierdo {
         display: grid;
@@ -399,7 +454,7 @@ footer {
         object-fit: contain;
         width: 100%;
         height: 100%;
-        padding: 1rem;
+        padding:  0 1rem 1rem;
     }
 
     .articlePresentacionWp__derecho {
@@ -409,6 +464,7 @@ footer {
         padding: 1.5rem 1.5rem 0 1.5rem;
         background-color: var(--color-secundario);
         margin: 1rem 0;
+        color: var(--decorado);
 
     }
 
@@ -428,10 +484,22 @@ footer {
         padding: 1rem;
         
         
+        
     }
 
+    .formatoTitulo{
+        font-size: 8vh;
+        
+    }
     
-    
+    .nav-item{
+        font-size: 1rem;
+    }
+
+    .contactanos__div{
+        
+        font-size: 2rem;
+    }
 
 }
 
@@ -440,9 +508,51 @@ footer {
 
 
 @media (min-width: 1200px) {
+    
+    .nav-item{
+        font-size: 1.5rem;
+    }
+
     .tituloPrincipal__h2 {
         font-size: 7rem;
 
+    }
+
+    .presentacionWp {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .presentacionWp article {
+        max-width: 1200px;
+
+    }
+
+    .presentacionWp div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: end;
+    }
+
+    .footerTexto {
+        width: 500px;
+    }
+
+    .presentacionWp h3{
+        font-size: 5vh;
+        align-self: start;
+    }
+
+    .presentacionWp p{
+        font-size: 3vh;
+    }
+
+    .presentacionWp div ul li{
+        font-size: 2.5vh;
     }
 
     .articlePresentacionWp__derecho {
@@ -453,7 +563,7 @@ footer {
         box-shadow: -10px 10px 10px rgba(0, 0, 0, 1);
     }
 
-    .tituloh3{
+    .formatoTitulo{
         font-size: 5rem;
     }
 
@@ -471,4 +581,6 @@ footer {
         align-items: center;
         justify-content: center;
     }
+
+  
 }
