@@ -13,7 +13,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-md color_decorado border-bottom">
+        <nav class="navbar navbar-expand-md color_decorado">
             <div class="container">
                 <div class="col-4">
                     <a class="navbar-brand color_fondo_decorado" href="#">
@@ -32,7 +32,7 @@
                     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item ">
-                                <a class="nav-link " aria-current="page" href="/index.html">Home</a>
+                                <a class="nav-link " aria-current="page" href="../index.html">Home</a>
                             </li>
                             <li class="nav-item active">
                                 <a class="nav-link" href="../pages/que_es.html">¿Couching?</a>
@@ -52,29 +52,39 @@
                 </div>
         </nav>
     </header>
-    <main>
+    <main class="color_decorado">
         <!-- Sección que responde qué es couching-->
         <section>
-            <h3>¿Couching?</h3>
-            <article>
-                <div>
-                    <h4>¿Qué es couching?</h4>
-                    <p>El Coaching es un proceso de desarrollo personal y profesional que te brinda el apoyo necesario
+            <h2 class="tituloCouching">¿Couching?</h2>
+            <article class="presentacion__articulo">
+                <div class="tituloMontado">
+                    <h2 class="tituloMontado__h2">¿Qué es couching?</h2>
+                    <img src="../img/enfoque_coaching.png" alt="" class="tituloMontado__img">
+                </div>
+                <p class="presentacion__p paddingTexto fw-600">El Coaching es un proceso de desarrollo personal y profesional que te brinda el apoyo necesario
                         para alcanzar tus metas, superar tus limitaciones y maximizar tu potencial. A través de
                         conversaciones reflexivas y estratégicas, el coaching te ayuda a obtener claridad, establecer
                         objetivos y tomar acciones concretas para lograr resultados tangibles.</p>
-                </div>
-                <img src="../img/imagen_temporal.png" alt="imagen referente a un couch y su cliente" width="250px">
+
             </article>
+            
         </section>
 
         <!--Sección que corresponde a los tipos de Couching-->
         <section>
-            <h3>Tipos de Couching</h3>
+            <article class="presentacion__articulo">
+                <div class="tituloMontado">
+                    <h2 class="tituloMontado__h2">Tipos de Couching</h2>
+                    <img src="../img/Servicio_Couching.jpg" alt="" class="tituloMontado__img">
+                </div>
+                
+
+            </article>
+            
             <!--Personal-->
             <article>
-                <h4>Coaching Personal</h4>
-                <p>El Coaching Personal se enfoca en tu crecimiento y desarrollo a nivel individual. Mediante un enfoque
+                <h3 class="tituloh3">Coaching Personal</h3>
+                <p class="presentacion__ul fw-600 paddingTexto">El Coaching Personal se enfoca en tu crecimiento y desarrollo a nivel individual. Mediante un enfoque
                     personalizado, trabajarás en la identificación y superación de tus obstáculos personales, la gestión
                     de tus emociones, el fortalecimiento de tu autoconfianza y la creación de una vida equilibrada y con
                     propósito.</p>
@@ -82,8 +92,8 @@
 
             <!--Profesional-->
             <article>
-                <h4>Coaching Profesional</h4>
-                <p>El Coaching Profesional está diseñado para potenciar tu carrera y éxito en el ámbito laboral. Con la
+                <h3 class="tituloDerecho tituloh3">Coaching Profesional</h3>
+                <p class="presentacion__ul fw-600 paddingTexto tituloDerecho">El Coaching Profesional está diseñado para potenciar tu carrera y éxito en el ámbito laboral. Con la
                     guía de un coach experimentado, explorarás tus fortalezas, desarrollarás habilidades de liderazgo
                     efectivas, mejorarás tu toma de decisiones y alcanzarás un mayor rendimiento en tu trabajo. El
                     coaching te ayudará a establecer metas profesionales ambiciosas y a diseñar una estrategia clara
@@ -92,8 +102,8 @@
 
             <!--Profesional-->
             <article>
-                <h4>Coaching Relacional</h4>
-                <p>El Coaching de Relaciones se centra en mejorar tus habilidades de comunicación, construir relaciones
+                <h3 class="tituloh3">Coaching Relacional</h3>
+                <p class="presentacion__ul fw-600 paddingTexto">El Coaching de Relaciones se centra en mejorar tus habilidades de comunicación, construir relaciones
                     saludables y fortalecer tus conexiones personales y profesionales. Trabajarás en el desarrollo de la
                     empatía, la escucha activa y la resolución de conflictos, lo que te permitirá establecer relaciones
                     más significativas y construir conexiones más sólidas con los demás.</p>
@@ -101,8 +111,8 @@
 
             <!--de Vida-->
             <article>
-                <h4>Coaching de Vida</h4>
-                <p>El Coaching de Vida te ayuda a explorar y definir tu propósito de vida, identificar tus valores
+                <h3 class="tituloh3 tituloDerecho">Coaching de Vida</h3>
+                <p class="presentacion__ul fw-600 paddingTexto tituloDerecho">El Coaching de Vida te ayuda a explorar y definir tu propósito de vida, identificar tus valores
                     fundamentales y crear un plan estratégico para vivir una vida plena y auténtica. A través de un
                     proceso de autoconocimiento y reflexión, te empoderarás para tomar decisiones alineadas con tus
                     aspiraciones y vivir de acuerdo con tus más altos ideales.</p>
@@ -113,65 +123,72 @@
 
         <!--Sección destinada a convencer al cliente y botón para ponerse en contacto-->
 
-        <section>
-            <h3>¿Por qué elegir el Coaching?</h3>
-            <ul>
-                <li>Apoyo personalizado: Trabajarás de la mano con un coach dedicado a tu éxito y bienestar.
-                </li>
-                <li>Claridad y enfoque: El coaching te ayuda a obtener claridad sobre tus metas y a establecer prioridades claras.
-                </li>
-                <li>Acción y rendimiento: A través de la planificación y la responsabilidad, el coaching te impulsa a tomar acciones concretas y a lograr resultados tangibles.
-                </li>
-                <li>Autodescubrimiento: El coaching te ayuda a explorar tus fortalezas, superar tus miedos y descubrir tu verdadero potencial.
-                </li>
-                <li>Transformación duradera: A través del coaching, desarrollarás habilidades y perspectivas que te acompañarán a lo largo de toda tu vida.
-                </li>
-            </ul>
-            <p>¡Comienza tu viaje de coaching hoy mismo y experimenta un crecimiento y éxito significativos en todas las áreas de tu vida!</p>
-
-            <a href="../pages/contactanos.html">¡Click aquí!</a>
+        <article class="presentacion__articulo">
+                <div class="tituloMontado">
+                    <h2 class="tituloMontado__h2">¿Por qué elegir el Coaching?</h2>
+                    <img src="../img/nuestro_enfoque.webp" alt="Imagen de bienvenida a DISI" class="tituloMontado__img">
+                </div>
+                <ul class="presentacion__ul fw-600 paddingTexto">
+                    <li>Apoyo personalizado: Trabajarás de la mano con un coach dedicado a tu éxito y bienestar.
+                    </li>
+                    <li>Claridad y enfoque: El coaching te ayuda a obtener claridad sobre tus metas y a establecer prioridades claras.
+                    </li>
+                    <li>Acción y rendimiento: A través de la planificación y la responsabilidad, el coaching te impulsa a tomar acciones concretas y a lograr resultados tangibles.
+                    </li>
+                    <li>Autodescubrimiento: El coaching te ayuda a explorar tus fortalezas, superar tus miedos y descubrir tu verdadero potencial.
+                    </li>
+                    <li>Transformación duradera: A través del coaching, desarrollarás habilidades y perspectivas que te acompañarán a lo largo de toda tu vida.
+                    </li>
+                </ul>
+            </article>
+        
+            <p class="fw-600 presentacion__p paddingCard">¡Comienza tu viaje de coaching hoy mismo y experimenta un crecimiento y éxito significativos en todas las áreas de tu vida!</p>
+            <div class="botonCentrado paddingCard">
+            <a href="../pages/contactanos.html" class="boton color_boton_primario">¡Click aquí!</a>
+        </div>
         </section>
     </main>
 
     <footer>
-        <hr>
-        <!--section perteneciente a las redes sociales-->
-        <div>
-            <h3>DISI en redes sociales</h3>
-            <p>Seguinos en nuestras redes sociales donde subiremos contenido a diario con consejos para mejorar tu día a
-                día y obtener la mejor versión de ti.
+        <div class="footer">
+            <!--section perteneciente a las redes sociales-->
+            <div class="footerTexto">
+                <h3>DISI en redes sociales</h3>
+                <p>Seguinos en nuestras redes sociales donde subiremos contenido a diario con consejos para mejorar tu
+                    día a
+                    día y obtener la mejor versión de ti.
 
-            </p>
+                </p>
+            </div>
+            <!--imagenes enlazadas a las redes sociales-->
+            <div class="footerRedes">
+                <!--Instagram-->
+                <div>
+                    <a href="https://www.instagram.com" target="_blank"><img
+                            src="../img/iconos_redes_sociales/instagram.png" alt="" width="30px"></a>
+                </div>
+                <!--Facebook-->
+                <div>
+                    <a href="https://www.facebook.com" target="_blank"><img
+                            src="../img/iconos_redes_sociales/facebook.png" alt="" width="30px"></a>
+                </div>
+                <!--Twitter-->
+                <div>
+                    <a href="https://www.twitter.com" target="_blank"><img src="../img/iconos_redes_sociales/twitter.png"
+                            alt="" width="30px"></a>
+                </div>
+                <!--Youtube-->
+                <div>
+                    <a href="https://www.youtube.com" target="_blank"><img
+                            src="../img/iconos_redes_sociales/Youtube_logo.png" alt="" width="30px"></a>
+                </div>
+                <!--Linkedin-->
+                <div>
+                    <a href="https://www.linkedin.com" target="_blank"><img
+                            src="../img/iconos_redes_sociales/LinkedIn_logo_initials.png" alt="" width="30px"></a>
+                </div>
+            </div>
         </div>
-        <!--imagenes enlazadas a las redes sociales-->
-        <div>
-            <!--Instagram-->
-            <div>
-                <a href="https://www.instagram.com" target="_blank"><img
-                        src="../img/iconos_redes_sociales/instagram.png" alt="" width="30px"></a>
-            </div>
-            <!--Facebook-->
-            <div>
-                <a href="https://www.facebook.com" target="_blank"><img src="../img/iconos_redes_sociales/facebook.png"
-                        alt="" width="30px"></a>
-            </div>
-            <!--Twitter-->
-            <div>
-                <a href="https://www.twitter.com" target="_blank"><img src="../img/iconos_redes_sociales/twitter.png"
-                        alt="" width="30px"></a>
-            </div>
-            <!--Youtube-->
-            <div>
-                <a href="https://www.youtube.com" target="_blank"><img
-                        src="../img/iconos_redes_sociales/Youtube_logo.png" alt="" width="30px"></a>
-            </div>
-            <!--Linkedin-->
-            <div>
-                <a href="https://www.linkedin.com" target="_blank"><img
-                        src="../img/iconos_redes_sociales/LinkedIn_logo_initials.png" alt="" width="30px"></a>
-            </div>
-        </div>
-
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
