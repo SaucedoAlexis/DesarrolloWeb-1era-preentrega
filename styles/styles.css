@@ -19,7 +19,7 @@ a {
     --boton-secundario: #a8dadc;
     --decorado: #f1faee;
     --titulos: Tangerine;
-    --textos:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    --textos: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 /* --------------------Header/nav-------------------------- */
@@ -27,7 +27,7 @@ a {
 .navbar-brand img {
     min-width: 60px;
     width: 28%;
-    }
+}
 
 .navbar-brand {
     display: flex;
@@ -49,7 +49,7 @@ a {
 
 }
 
-.nav-item{
+.nav-item {
     font-size: 1rem;
 }
 
@@ -62,11 +62,17 @@ a {
 
 }
 
-h1,h2,h3,h4,h5{
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-family: var(--titulos);
 }
 
-p,a,li{
+p,
+a,
+li {
     font-family: var(--textos);
 }
 
@@ -103,7 +109,7 @@ p,a,li{
 .color_boton_secundario {
     background-color: var(--boton-secundario);
     color: var(--decorado);
-    
+
 }
 
 .color_decorado {
@@ -327,15 +333,15 @@ footer {
     background-color: var(--boton-secundario);
     color: var(--boton-primario);
     font-weight: 700;
-    
+
 }
 
 .testimonioCard__img {
     width: 100%;
     max-height: 500px;
-    object-fit:cover;
+    object-fit: cover;
     object-position: top;
-    
+
 
 }
 
@@ -344,26 +350,29 @@ footer {
     padding-right: 1rem;
     margin: 0;
 }
-.testimonioCard__testimonio{
-    margin:0
-    
+
+.testimonioCard__testimonio {
+    margin: 0
 }
+
 .testimoniosWp {
     display: none;
 }
-.testimonioCard__testimonio, .testimonioCard__nombre{
+
+.testimonioCard__testimonio,
+.testimonioCard__nombre {
     padding: 0.3rem;
 }
 
 /*-----------Contactanos index--------------*/
 
-.contactanos{
+.contactanos {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.contactanos__div{
+.contactanos__div {
     text-align: center;
     align-self: center;
     justify-self: center;
@@ -372,7 +381,7 @@ footer {
 }
 
 /* Contactanos pie de página que_es */
-.contactanos_centrado{
+.contactanos_centrado {
     display: none;
 }
 
@@ -394,22 +403,22 @@ footer {
         width: 400px;
     }
 
-    
 
-    .footerRedes li img{
+
+    .footerRedes li img {
         align-self: center;
         justify-self: center;
         width: 40px;
         height: 40px;
-        
+
     }
 
     /* ----------que_es page---------------*/
-    .alinearDerecha{
+    .alinearDerecha {
         text-align: end;
     }
-    
-    
+
+
 
 
     /* Presentación Query WP */
@@ -426,25 +435,25 @@ footer {
 
     }
 
-    
 
-    .presentacionWp div{
+
+    .presentacionWp div {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: start;
     }
 
-    .presentacionWp h3{
+    .presentacionWp h3 {
         font-size: 3rem;
-        
+
     }
 
-    .presentacionWp p{
+    .presentacionWp p {
         font-size: 1rem;
     }
 
-    .presentacionWp div ul li{
+    .presentacionWp div ul li {
         font-size: 1rem;
     }
 
@@ -466,7 +475,7 @@ footer {
         object-fit: contain;
         width: 100%;
         height: 100%;
-        padding:  0 1rem 1rem;
+        padding: 0 1rem 1rem;
     }
 
     .articlePresentacionWp__derecho {
@@ -494,42 +503,44 @@ footer {
         grid-template-columns: 1fr 1fr;
         justify-items: center;
         padding: 1rem;
-        
-        
-        
+
+
+
     }
 
-    .formatoTitulo{
+    .formatoTitulo {
         font-size: 8vh;
-        
+
     }
-    
-    .nav-item{
+
+    .nav-item {
         font-size: 1rem;
     }
 
-    .contactanos__div{
-        
+    .contactanos__div {
+
         font-size: 2rem;
     }
-    .contactanos_centrado{
+
+    .contactanos_centrado {
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
+
     /* que_es - Contactanos */
-    .contactanos_centrado div{
-                font-weight: 700;
+    .contactanos_centrado div {
+        font-weight: 700;
         font-size: 2rem;
         max-width: 1200px;
         align-self: center;
         justify-self: center;
-        
+
     }
 
-    
+
 
 
 }
@@ -539,8 +550,8 @@ footer {
 
 
 @media (min-width: 1200px) {
-    
-    .nav-item{
+
+    .nav-item {
         font-size: 1.5rem;
     }
 
@@ -559,10 +570,10 @@ footer {
 
     .presentacionWp article {
         max-width: 1200px;
-        
+
     }
 
-    .presentacionWp div{
+    .presentacionWp div {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -573,16 +584,16 @@ footer {
         width: 500px;
     }
 
-    .presentacionWp h3{
+    .presentacionWp h3 {
         font-size: 5vh;
         align-self: start;
     }
 
-    .presentacionWp p{
+    .presentacionWp p {
         font-size: 3vh;
     }
 
-    .presentacionWp div ul li{
+    .presentacionWp div ul li {
         font-size: 2.5vh;
     }
 
@@ -594,29 +605,30 @@ footer {
         box-shadow: -10px 10px 10px rgba(0, 0, 0, 1);
     }
 
-    .formatoTitulo{
+    .formatoTitulo {
         font-size: 5rem;
     }
 
-    .testimonio__div{
+    .testimonio__div {
         display: flex;
         flex-direction: row;
         height: 700px;
         max-height: 750px;
         max-width: 1200px;
-        
+
     }
-    .testimonio{
+
+    .testimonio {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
 
-    .contactanos_centrado{
-       width: 100%;
-       
+    .contactanos_centrado {
+        width: 100%;
+
     }
 
-  
+
 }
